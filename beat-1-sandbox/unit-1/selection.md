@@ -15,10 +15,14 @@ wrong label is not graded.
 
 **Issue link**
 
+https://github.com/codepath/pathreview-ai301-fa26-s1/issues/69
+
 [The individual Path Review issue page. A link to the repository or the issue list
 does not satisfy this field.]
 
 **Verdict output**
+
+I have not been able to run it yet.
 
 [Your skill's live-mode output for this issue, pasted verbatim and ending with the
 fenced JSON verdict block. A summary does not satisfy this field.]
