@@ -76,9 +76,14 @@ This is also the basis for the claim comment you write in Unit 2.
 [Answer all three:
 
 1. The issue's fit to your interests and to the time available.
-2. What the verdict identified correctly, and what you weighed that the rubric could
+     I was interested in this issue because it is about fixing Python code and improving how the LLM handles output. I have some experience with Python, so I wanted to check this out. It also        only required 2-4 hours, so that was manageable with our schedule.
+   
+3. What the verdict identified correctly, and what you weighed that the rubric could
    not.
-3. The anticipated difficulty in claiming it.]
+   I had some issues in getting access to Claude, so I was not able to run the program yet and test. After getting access, I will come back here and update this question.
+   
+5. The anticipated difficulty in claiming it.]
+   The main uncertainty here is if someone has already claimed it. It said open, but there were comments saying that people would like to work on it. However, I was not sure if they completed      it or are still working, or if they had started even. Before claiming it in Unit 2, I would check the assignees, linked pull requests, and recent comments.
 
 ---
 
