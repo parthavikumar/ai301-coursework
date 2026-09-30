@@ -15,8 +15,7 @@ label is not graded.
 
 **GitHub username**
 
-[Your GitHub username, exactly as it appears on your profile — no `@`, no profile URL. Your
-comments upstream are identified by this name.]
+parthavikumar
 
 ---
 
@@ -42,28 +41,27 @@ fields.
 
 **Run history**
 
-[The agreement score of each run you did, in order. A single run is a complete answer if
-only one run occurred. **The last score in your list must match the agreement line in the
-`eval-run.txt` you committed** — that file is the record of your final run.]
+1. Initial full run: 19/20. The disclosure category was 0/1, so the run did not pass.
+2. Targeted retry using `--only pkg-20`: 1/1. The revised rubric rejected pkg-20, matching gold. This partial run did not determine the full bar.
+3. Confirming full run: 19/20, PASS. Categories: clear-accept 7/8, disclosure 1/1, no-evidence 4/4, unfollowable-comms 3/3, wrong-target 4/4.
+
 
 **Package analysis**
 
-[Pick one scored package (`pkg-01` through `pkg-20` — the four `calib-` packages are never
-scored). Name it by id, say what your rubric decided and what the gold label said, and
-explain why your rubric read it that way.]
+I examined pkg-20. Initially, my rubric accepted it while the gold label was reject. Its reproduction evidence supported the reported behavior, but its repo policy stated: "All AI usage in any form must be disclosed, stating the tool used and the extent of the assistance". Neither candidate comment included a disclosure. The initial grader passed Repo conventions because "no evidence of AI assistance exists to require disclosure." I clarified how to handle missing disclosure under an explicit mandatory policy. The targeted retry and final full run both rejected pkg-20, matching gold.
+
 
 **Check rationale**
 
-[Quote one check from the `rubric.md` you uploaded to `tools/repro-check/`, exactly as it reads now.
-Then say why it reads that way — what you revised to get there, or what you rejected in
-favour of it.]
+My Repo conventions check reads:
+
+"The comments satisfy stated contribution requirements, including mandatory AI-assistance disclosure and required reporting information, and communicate respectfully. Do not invent requirements absent from the available policy."
+
+I included this check because valid technical evidence alone does not establish that a comment meets the repository's contribution rules. After pkg-20 was missed, I added a clarification that silence about AI assistance should not automatically establish compliance with a mandatory disclosure policy. The final sentence limits the check to requirements actually stated by the repository.
 
 **Trade-offs**
 
-[Every check gives something up. Any one of these is a complete answer: a package whose
-result it changes, a canary you re-ran with `--only`, a case you accept it will miss, or a
-stated reason nothing changed elsewhere. "Nothing changed, and here is how I know" earns
-the point in full when the reason follows.]
+The confirming full run caught pkg-20 but falsely rejected pkg-03, which gold accepted. Pkg-03's policy says "comments to maintainers must be written by humans in their own words"; it does not state a mandatory AI-use disclosure requirement. The grader nevertheless marked Repo conventions unclear because the package had "no AI-assistance disclosure and no explicit 'no AI assistance used' statement." This shows a limitation: the grader applied my disclosure clarification too broadly. The final run passed at 19/20, but this false rejection remains unresolved.
 
 ---
 
